@@ -1,0 +1,92 @@
+/*订单菜单*/
+.classfity-box {
+    border: 1px solid #e8e8e8;
+    margin: 5px;
+}
+.classfity-box li {
+    list-style: none;
+    cursor: pointer;
+}
+.order-list {
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+    clear: both;
+    padding: 5px;
+    margin: 0;
+}
+.order-list li {
+    float: left;
+    padding: 3px 10px;
+}
+.order-list .order-list-tit {
+    padding: 5px 10px 35px 5px;
+    width:100px;
+}
+.classfity-box label {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.classfity-box label input {
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+/*订单悬浮框*/
+.order-fixed {
+    position: fixed;
+    text-align: center;
+    width: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.order-fixed-ul {
+    list-style: none;
+    text-align: left;
+}
+.order-fixed-ul li {
+    padding: 5px 0;
+}
+.order-fixed-ul .red {
+    color: red;
+    margin-left: 10px;
+}
+.order-fixed-ul i {
+    cursor: pointer;
+}
+.order-price .red {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*close*/
+.order-close{
+    float: right;
+}
+.order-fixed-top{
+    width:100%;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #445fb0;
+    color:#fff;
+}
+.order-fixed-left{
+    float: left;
+}
+.order-open{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    background-color:#445fb0;
+    color:#fff;
+    padding:10px;
+    width:15px;
+    display: none;
+    cursor: pointer;
+}

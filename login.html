@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" >
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="signup clearfix">
+        <div class="signup-left fl">
+
+            <img src="images/logo.png"  />
+
+            <h2 class="signup-tit">软文营销在线自助发布</h2>
+            <ul class="signup-ifo">
+                <li> 覆盖全国主流网络媒体</li>
+                <li> 后台自助发稿</li>
+                <li> 全网最低价</li>
+            </ul>
+        </div>
+        <div class="signup-right fr" id="signup-right-1">
+            <h2 >注册</h2>
+            <form class="form-horizontal" role="form" onsubmit="return check()">
+                <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" name="cus-style" />广告主
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="cus-style" />媒体主
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 注册账号：</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control name"  placeholder="注册账号" >
+                        <span class="login-name"></span>
+                        <p class="login-mark">（请确保QQ号码真实，便于找回密码）</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 设置密码：</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control password" placeholder="设置密码" >
+                        <span class="login-password"></span>
+                        <p class="login-mark">（平台登录密码）</p>
+                    </div>
+                </div>
+                <div class="login-submit">
+                    <button type="submit" class="btn btn-warning submit">注 册</button>
+                    <a href="#"  class="login-btn" id="login">已有账号？现在登录</a>
+                </div>
+            </form>
+        </div>
+        <div class="signup-right fr" id="signup-right-2" style="display: none;">
+            <h2 >登录</h2>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" name="cus-style1" />广告主
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="cus-style1" />媒体主
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 登录账号：</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control name"  placeholder="登录账号" >
+                        <span class="login-name"></span>
+                        <p class="login-mark">（请确保QQ号码真实，便于找回密码）</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 密码：</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control password" placeholder="密码">
+                        <span class="login-password"></span>
+                        <p class="login-mark">（忘记密码请联系客服）</p>
+
+                    </div>
+                </div>
+                <div class="login-submit">
+                    <button type="submit" class="btn btn-warning submit">登 录</button>
+                    <a href="#"  class="login-btn" id="signup">没有账号？现在注册</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/validate.js"></script>
+<script>
+    $(function(){
+        $("#login").click(function(){
+            $("#signup-right-1").hide();
+            $("#signup-right-2").show();
+        });
+        $("#signup").click(function(){
+            $("#signup-right-2").hide();
+            $("#signup-right-1").show();
+        });
+    })
+</script>
+</body>
+</html>
